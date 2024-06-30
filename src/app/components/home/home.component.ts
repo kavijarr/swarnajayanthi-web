@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { SclcarouselComponent } from '../sclcarousel/sclcarousel.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent,SclcarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

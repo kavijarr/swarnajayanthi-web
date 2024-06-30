@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <c-carousel class="size" (itemChange)="onItemChange($event)" [interval]="5000" transition="slide">
+      <c-carousel-inner>
+        <c-carousel-item *ngFor="let slide of slides">
+          <img
+            [src]="slide.src"
+            alt="{{slide.title}}"
+            class="d-block w-100 carousel-img"
+            loading="lazy"
+          />
+        </c-carousel-item>
+      </c-carousel-inner>
+    </c-carousel>
+  </div>
+  
