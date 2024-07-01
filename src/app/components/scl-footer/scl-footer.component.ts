@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-scl-footer',
@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class SclFooterComponent {
 
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
+
+  scrollToComponent(componentId: string) {
+    const element = this.el.nativeElement.ownerDocument.getElementById(componentId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
