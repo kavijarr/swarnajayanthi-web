@@ -79,7 +79,7 @@
   transition: 0.4s ease;
 }
 .subject-card .info button:hover {
-  background: dodgerblue;
+  background: #5C0403;
   color: white;
 }
 
