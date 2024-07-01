@@ -4,10 +4,11 @@ import { SclcarouselComponent } from '../sclcarousel/sclcarousel.component';
 import { SclVisionComponent } from '../scl-vision/scl-vision.component';
 import { SubjectStreamsComponent } from '../subject-streams/subject-streams.component';
 import { SclFooterComponent } from '../scl-footer/scl-footer.component';
+import { GalleryComponent } from '../gallery/gallery.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent,SclcarouselComponent,SclVisionComponent,SubjectStreamsComponent,SclFooterComponent],
+  imports: [NavbarComponent,SclcarouselComponent,SclVisionComponent,SubjectStreamsComponent,SclFooterComponent,GalleryComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
